@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" <a href="styles.css"></a>
+  </head>
+  <title>Survey</title>
+  <body>
+    <h1 id="title">Education Survey Form</h1>
+    <p id="description">Please take your time to fill this form. </p>
+    <main>
+
+    <form id="survey-form">
+
+      <label id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required></label>
+
+<label id="email-label">Email <input type="email" id="email" placeholder="Enter your email" required></label>
+
+<label id ="number-label">Age(optional)<input type="number" id="number" placeholder="Age" min="7" max="60"></label>
+
+<label id="selection">What is your level of study:
+      <select id="dropdown">
+        <option value="1">Primary</option>
+        <option value="2">Secondary</option>
+        <option value="3">University</option>
+        <option value="4">Other</option>
+      </select>
+
+      <label id="male">What is your Gender:</label>
+      </label>
+     <input type="radio" name="choice" class="choice" value="male" checked/><label id="gender">Male</label>
+
+     <input type="radio" name="choice" class="choice" value="female"/><label id="gender">Female</label>
+
+   <label id="stype">Which type of school did you go to: </label>
+   <input type="checkbox" value="private" id="school"/><label class="school">Private</label>
+   <input type="checkbox" value="public" id="school"><label class="school">Public</label>
+   <input type="checkbox" value="homeschool" id="school"><label class="school">Homeschool</label>
+   <input type="checkbox" value="online" id="school"><label class="school">Online School</label>
+
+      <textarea rows="5" placeholder="Additional comments of your school expereince...">
+      </textarea>
+
+      <input type="submit" id="submit" type="submit" value="Submit"/>
+  </form>
+  </main>
+  </body>
+</html>
